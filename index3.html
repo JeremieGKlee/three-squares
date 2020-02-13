@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>3 carrés</title>
+    <style>
+        body {
+            background-color: #aaa;
+        }
+        
+        #container {
+            width: 600px;
+            height: 600px;
+            background-color: white;
+            margin: auto;
+            position: relative;
+        }
+        
+        #rouge {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin: auto;
+            position: absolute;
+            /* postulat de départ */
+            top: 50%;
+            left: 50%;
+            /* à 50%/50% du parent référent */
+            transform: translate(-50%, -50%);
+            /* décalage de 50% de sa propre taille */
+        }
+        
+        #vert {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin: auto;
+            position: absolute;
+            /* postulat de départ */
+            top: 50%;
+            left: 50%;
+            /* à 50%/50% du parent référent */
+            transform: translate(-50%, -50%);
+            /* décalage de 50% de sa propre taille */
+        }
+        
+        #bleu {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            margin: auto;
+            position: absolute;
+            /* postulat de départ */
+            top: 50%;
+            left: 50%;
+            /* à 50%/50% du parent référent */
+            transform: translate(-50%, -50%);
+            /* décalage de 50% de sa propre taille */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="rouge">Rouge
+            <div id="vert">Vert
+                <div id="bleu">Bleu</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
